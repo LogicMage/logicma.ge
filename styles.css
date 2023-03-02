@@ -112,6 +112,10 @@ p + h1 {
     margin-top: 60px;
 }
 
+.project-container a {
+    margin-right: 40px;
+}
+
 .project-item {
     vertical-align: top;
     display: inline-block;
