@@ -23,6 +23,14 @@ a {
     margin-right: 40px;
 }
 
+@media screen and (max-width: 1080px) {
+    .topnav a {
+        display: block;
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+}
+
 .topnav a:hover {
     text-decoration: underline;
 }
@@ -44,7 +52,7 @@ h1 {
 h2 {
     font-size: 36px;
     margin-top: 50px;
-    padding-right: 50%;
+    padding-right: 40%;
 }
 
 h3 {
@@ -84,6 +92,12 @@ article {
     margin-bottom: 40px;
 }
 
+@media screen and (max-width: 1080px) {
+    .about p {
+        padding-right: 10%;
+    }
+}
+
 .splash p {
     font-size: 12px;
     margin-top: 0px;
@@ -95,6 +109,12 @@ article {
     margin-top: 80px;
     margin-bottom: 80px;
     padding-right: 40%;
+}
+
+@media screen and (max-width: 1080px) {
+    .blog-container {
+        padding-right: 10%;
+    }
 }
 
 .blog-container > div {
@@ -111,6 +131,12 @@ article {
     margin-left: 20px;
     text-decoration: none;
     font-weight: bolder;
+}
+
+@media screen and (max-width: 1080px) {
+    .blog-chunk h1 {
+        margin-left: 0px;
+    }
 }
 
 .blog-chunk h2 {
@@ -132,12 +158,25 @@ article {
     float: left;
 }
 
+@media screen and (max-width: 1080px) {
+    .blog-image {
+        width: 80%;
+        height: auto;
+    }
+}
+
 .project-container {
     margin-top: 60px;
 }
 
 .project-container a {
     margin-right: 40px;
+}
+
+@media screen and (max-width: 1370px) {
+    .project-container a {
+        margin-top: 80px;
+    }
 }
 
 .project-item {
@@ -170,9 +209,15 @@ article {
 .article-container p {
     text-align: justify;
     font-size: 18px;
-    padding-right: 50%;
+    padding-right: 40%;
     margin-top: 40px;
     margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1080px) {
+    .article-container p {
+        padding-right: 10%;
+    }
 }
 
 #pso-calculator {
@@ -181,6 +226,14 @@ article {
 
 #estab {
     margin-top: 50px;
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 1080px) {
+    #estab {
+        width: 100%;
+        height: auto;
+    }
 }
 
 #values {
