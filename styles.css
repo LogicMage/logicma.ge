@@ -52,7 +52,7 @@ h1 {
 h2 {
     font-size: 36px;
     margin-top: 50px;
-    padding-right: 40%;
+    padding-right: 30%;
 }
 
 h3 {
@@ -216,6 +216,7 @@ article {
 
 @media screen and (max-width: 1080px) {
     .article-container p {
+        font-size: 15px;
         padding-right: 10%;
     }
 }
@@ -226,7 +227,7 @@ article {
 
 #estab {
     margin-top: 50px;
-    padding-right: 10px;
+    margin-right: 20px;
 }
 
 @media screen and (max-width: 1080px) {
