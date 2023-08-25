@@ -217,7 +217,7 @@ article {
 @media screen and (max-width: 1080px) {
     .article-container p {
         font-size: 15px;
-        padding-right: 10%;
+        padding-right: 10px;
     }
 }
 
