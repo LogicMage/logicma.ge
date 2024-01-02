@@ -1,38 +1,31 @@
 html {
-    text-align: left;
-    color: #4d5757;
-    background-color: #e7e7e4;
+    text-align: center;
+    color: #e7e7e4;
+    background-color: #000000;
     font-family: 'Inter', sans-serif;
-    padding-left: 10px;
 }
 
 .topnav {
     width: auto;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
 }
 
 a {
-    color: #4d5757;
+    color: #e7e7e4;
     text-decoration: none;
 }
 
 .topnav a {
-    color: #4d5757;
-    font-size: 32px;
-    margin-right: 40px;
-}
-
-@media screen and (max-width: 1080px) {
-    .topnav a {
-        display: block;
-        font-size: 32px;
-        margin-bottom: 10px;
-    }
+    color: #e7e7e4;
+    font-size: 18px;
+    margin-right: 4vw;
 }
 
 .topnav a:hover {
-    text-decoration: underline;
+    color: #000000;
+    background: #e7e7e4;
+    transition: 0.2s;
 }
 
 p a {
@@ -98,9 +91,9 @@ article {
     }
 }
 
-.splash p {
-    font-size: 12px;
-    margin-top: 0px;
+pre {
+    font-size: 10px;
+    margin-top: 30vh;
     margin-bottom: 0px;
 }
 
@@ -242,7 +235,12 @@ article {
 }
 
 footer {
-    margin-top: 80px;
+    vertical-align: bottom;
+}
+
+footer a img {
+    width: 50px;
+    margin-right: 4vh;
 }
 
 
