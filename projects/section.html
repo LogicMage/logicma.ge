@@ -1,66 +1,70 @@
-<head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="keywords" content="Logic, Logic_Mage">
-    <meta content="PSO1 Section ID Calculator" property="og:title"/>
-    <meta content="Inner machinations and the enigma." property="og:description"/>
-    <meta content="Inner machinations and the enigma." property="description"/>
-    <meta content="https://www.logicma.ge/projects/pso-section.html" property="og:url"/>
-    <meta content="https://www.logicma.ge/assets/phantasy-star.jpg" property="og:image"/>
-    <meta content=“profile” property=“og:type”/>
-    <meta content="summary_large_image" name="twitter:card">
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="/styles.css"/> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">    
-    <title>PSO1 Section ID Calculator</title>
-</head>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta content="The tongue may hide the truth but the eyes - never." property="description" />
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="/styles/home-styles.css" /> 
+        <title>Logic's Hideout</title>
+    </head>
 
-<nav class="topnav">
-    <a href="/">home</a>
-    <a href="/about">about me</a>
-    <a href="/blog">blog</a>
-    <a href="/projects">projects</a>
-</nav> 
+    <nav class="topnav">
+        <a href="/">home</a>
+        <a href="/about">about me</a>
+        <a href="/blog">blog</a>
+        <a href="/projects">projects</a>
+    </nav> 
 
-<div id="pso-calculator">
-    <h3>PSO1 Section ID Calculator</h3><br>
-    <label>Hunter Name: </label>
-    <input type="text" value="" placeholder="Enter your name..." name="input" id="input"></input><br><br>
-    <label>Blue Burst character? </label>
-    <input type="checkbox" name="burstbox" id="burstbox" onclick="updateValue()"></input><br><br>
-    <label for="character">Choose a class:</label>
-    <select name="psocharacter" id="psocharacter" onchange="updateValue()">
-        <option value="HUmar">HUmar</option>
-        <option value="HUnewearl">HUnewearl</option>
-        <option value="HUcast">HUcast</option>
-        <option value="HUcaseal">HUcaseal</option>
-        <option value="RAmar">RAmar</option>
-        <option value="RAmarl">RAmarl</option>
-        <option value="RAcast">RAcast</option>
-        <option value="RAcaseal">RAcaseal</option>
-        <option value="FOmar">FOmar</option>
-        <option value="FOmarl">FOmarl</option>
-        <option value="FOnewm">FOnewm</option>
-        <option value="FOnewearl">FOnewearl</option>
-    </select><br><br>
-    <p id="values"></p>
-    <img id="symbol">
-    <h4>What is this?</h4>
-    <div style="padding-right: 50%; text-align: justify;">
-        <p>
-            When creating a character in Phantasy Star Online, the game will assign a "Section ID" to your character. This value is determined by your
-            chosen name - each character in the string advances the cipher by a unique amount. When playing the PC version, or Blue Burst, this process 
-            is more complex - it uses a slightly different cipher and adds an additional offset based on your chosen class. Thus, for this
-            reason, it is highly unlikely that a Dreamcast name will result in the same Section ID on Blue Burst.
-        </p>
-        <p>
-            Section IDs influence the drop rates of certain items, allow certain special items to drop, and also affect the list of possible Mags that a given
-            character may obtain through evolution. A complete breakdown of the cipher can be found <a href="https://phantasystar.fandom.com/wiki/Section_ID">here</a>.
-        </p>
+    <div id="pso-calculator">
+        <h1>PSO1 Section ID Calculator</h1><br>
+        <label>Hunter Name: </label>
+        <input type="text" value="" placeholder="Enter your name..." name="input" id="input"></input><br><br>
+        <label>Blue Burst character? </label>
+        <input type="checkbox" name="burstbox" id="burstbox" onclick="updateValue()"></input><br><br>
+        <label for="character">Choose a class:</label>
+        <select name="psocharacter" id="psocharacter" onchange="updateValue()">
+            <option value="HUmar">HUmar</option>
+            <option value="HUnewearl">HUnewearl</option>
+            <option value="HUcast">HUcast</option>
+            <option value="HUcaseal">HUcaseal</option>
+            <option value="RAmar">RAmar</option>
+            <option value="RAmarl">RAmarl</option>
+            <option value="RAcast">RAcast</option>
+            <option value="RAcaseal">RAcaseal</option>
+            <option value="FOmar">FOmar</option>
+            <option value="FOmarl">FOmarl</option>
+            <option value="FOnewm">FOnewm</option>
+            <option value="FOnewearl">FOnewearl</option>
+        </select><br><br>
+        <p id="values"></p>
+        <img id="symbol">
+        <div id="section">
+            <h2>What is this?</h2>
+            <p>
+                When creating a character in Phantasy Star Online, the game will assign a "Section ID" to your character. This value is determined by your
+                chosen name - each character in the string advances the cipher by a unique amount. When playing the PC version, or Blue Burst, this process 
+                is more complex - it uses a slightly different cipher and adds an additional offset based on your chosen class. Thus, for this
+                reason, it is highly unlikely that a Dreamcast name will result in the same Section ID on Blue Burst.
+            </p>
+            <p>
+                Section IDs influence the drop rates of certain items, allow certain special items to drop, and also affect the list of possible Mags that a given
+                character may obtain through evolution. A complete breakdown of the cipher can be found <a href="https://phantasystar.fandom.com/wiki/Section_ID">here</a>.
+            </p>
+        </div>
     </div>
-</div>
 
-<script src="../scripts/section.js"></script> 
+    <footer>
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">
+            <img src="/assets/cc.svg">
+        </a>
+        <a href="https://decept.org/Logic_Mage" target="_blank">
+            <img src="/assets/fediverse.svg">
+        </a>
+        <a href="https://github.com/LogicMage" target="_blank">
+            <img src="/assets/github.svg">
+        </a>
+    </footer>
+
+    <script src="../scripts/section.js"></script> 
+</html>
