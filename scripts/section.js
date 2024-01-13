@@ -80,7 +80,10 @@ function checkUpdate() {
         burst = document.getElementById("burstbox");
         let psocharacter = document.getElementById("psocharacter");
         for (i=0; i<document.getElementById('input').value.length; i++) {
-                sectorvalue += letters.get(document.getElementById('input').value.charAt(i));
+                if ((document.getElementById('input').value.charAt(i)) == "'" && burst.checked) sectorvalue += 9;
+                else if ((document.getElementById('input').value.charAt(i)) == "`" && burst.checked) sectorvalue += 6;
+                else if ((document.getElementById('input').value.charAt(i)) == "}" && burst.checked) sectorvalue += 5;
+                else sectorvalue += letters.get(document.getElementById('input').value.charAt(i));
         }
         if (burst.checked) {
                 sectorvalue += charactermap.get(psocharacter.value);
