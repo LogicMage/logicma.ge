@@ -45,7 +45,8 @@ pre {
 }
 
 #section {
-    margin: 5vh 20vw 20vh;
+    text-align: left;
+    margin: 5vh 20vw 10vh;
 }
 
 .article-container {
@@ -83,6 +84,16 @@ footer {
     text-align: center;
 }
 
+.shifting-footer {
+    margin: auto;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 4vh 0;
+    text-align: center;
+}
+
 .blog-footer {
     position: static;
     padding: 0;
@@ -100,7 +111,7 @@ footer a img {
     margin: 0 2vw 5vh;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 580px) {
     pre {
         font-size: 9px;
     }
@@ -123,6 +134,9 @@ footer a img {
         margin-right: 2vw;
         text-decoration: none;
     }
+    #section {
+        margin: 5vh 10vw 10vh;
+    }
     footer a img {
         height: 50px;
         width: 50px;
@@ -137,8 +151,9 @@ footer a img {
     #about {
         margin-bottom: 10vh;
     }
-    footer {
+    .shifting-footer {
         position: static;
         padding: 0;
+        margin-top: 10vh;
     }
 }
